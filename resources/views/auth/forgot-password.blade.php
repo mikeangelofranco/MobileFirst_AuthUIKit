@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <x-auth.layout :title="__('Reset password')" :subtitle="__('We\\'ll email you a reset link if the address exists.')">
+    <x-auth.layout :title="__('Reset password')" :subtitle="__('We\'ll email you a reset link if the address exists.')">
         @if (session('status'))
             <x-auth.alert type="success" title="{{ __('Check your email') }}" class="mb-4">
                 {{ __('If the email exists, we sent a password reset link.') }}

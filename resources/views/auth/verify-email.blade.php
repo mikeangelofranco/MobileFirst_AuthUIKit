@@ -7,7 +7,7 @@
         @endif
 
         <div class="text-sm leading-relaxed text-[rgb(var(--c-muted))]">
-            {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\\'t receive the email, you can request another.') }}
+            {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, you can request another.') }}
         </div>
 
         <div

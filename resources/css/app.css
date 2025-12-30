@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+
+    body {
+        background-color: rgb(var(--c-bg));
+        color: rgb(var(--c-fg));
+        text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+        background-color: rgba(var(--c-primary), 0.18);
+        color: rgb(var(--c-fg));
+    }
+
+    :root {
+        color-scheme: light;
+
+        --c-bg: 248 250 252;
+        --c-surface: 255 255 255;
+        --c-muted-bg: 241 245 249;
+        --c-fg: 15 23 42;
+        --c-muted: 100 116 139;
+        --c-border: 226 232 240;
+
+        --c-primary: 79 70 229;
+        --c-primary-hover: 67 56 202;
+        --c-primary-disabled: 129 140 248;
+
+        --c-danger: 220 38 38;
+        --c-success: 22 163 74;
+    }
+
+    .dark {
+        color-scheme: dark;
+
+        --c-bg: 2 6 23;
+        --c-surface: 15 23 42;
+        --c-muted-bg: 30 41 59;
+        --c-fg: 226 232 240;
+        --c-muted: 148 163 184;
+        --c-border: 51 65 85;
+
+        --c-primary: 129 140 248;
+        --c-primary-hover: 165 180 252;
+        --c-primary-disabled: 99 102 241;
+
+        --c-danger: 248 113 113;
+        --c-success: 74 222 128;
+    }
+}
